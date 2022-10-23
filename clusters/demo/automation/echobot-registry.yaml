@@ -1,0 +1,10 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageRepository
+metadata:
+  name: echobot
+  namespace: flux-system
+spec:
+  image: ghcr.io/sngular/gitops-echobot
+  interval: 1m0s
+
